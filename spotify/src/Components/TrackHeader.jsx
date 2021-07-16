@@ -2,10 +2,12 @@ import React from 'react'
 import {withRouter} from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import TrackMusic from './SharedComp/TrackMusic'
+import useScrollPosition from '@react-hook/window-scroll'
 
 function TrackHeader(props) {
     const [trackList, setTrackList] = useState([])
     const [currentAlbum, setAlbum] = useState([])
+    const scrollY = useScrollPosition(60)
 
 useEffect(()=>getDataFromAPI() ,[props.currentAlbumID])
     const getDataFromAPI = async () => {
@@ -28,11 +30,11 @@ useEffect(()=>getDataFromAPI() ,[props.currentAlbumID])
     }
 
 
+
     return (
         <section id="trackTable" className="row d-flex flex-column mx-0  mt-3 py-0 mb-5">
-           
                 <div className="container-fluid p-0 m-0">
-                    <div id="tableHeader" className="row justify-content-between p-0 px-4 m-0">
+                    <div id="tableHeader"  className={scrollY < 550 ?"row justify-content-between p-0 px-4 m-0" : "row justify-content-between p-0 px-4 m-0 gradientBG" }>
                         <div className="trackNumber d-flex justify-content-center align-items-center"><span>#
                         </span></div>
                         <div className="col-md-5 col-8 trackName d-flex align-items-center"><span>TITLE</span></div>

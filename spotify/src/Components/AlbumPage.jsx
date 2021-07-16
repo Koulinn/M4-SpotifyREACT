@@ -6,6 +6,7 @@ import { withRouter } from 'react-router'
 import { useState, useEffect } from 'react'
 import AlbumMiddleSection from './AlbumMiddleSection'
 import TrackHeader from './TrackHeader'
+import './albumPage.css'
 
 function AlbumPage(props) {
     const [currentTrackList, setCurrenTrackList] = useState('')
