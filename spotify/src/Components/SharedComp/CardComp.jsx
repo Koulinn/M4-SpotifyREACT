@@ -19,9 +19,9 @@ function CardComp(props) {
                 <Link to={"/albumPage/" + props.music.album.id} >
                     <h5 className="card-title text-truncate card-title-mod">{props.music.album.title}</h5>
                 </Link>
-                <a href="artistPage.html?album_Id=49675972">
+                <Link to={"/artistPage/" + props.music.artist.id}>
                      <p className="card-text card-text-mod">{props.music.artist.name}</p>
-                </a>
+                </Link>
                 </div>
             </div>
     )
