@@ -15,7 +15,8 @@ function AlbumCover(props) {
 
     useEffect(()=>
        {getDataFromAPI(props.currentAlbumID)
-        console.log(currentAlbum)}
+        // console.log(currentAlbum)
+    }
     ,[])
 
 
@@ -26,6 +27,8 @@ function AlbumCover(props) {
             if(response.ok){
                 let dataRequested = await response.json()
                 setCurrentAlbum(dataRequested)
+                console.log(dataRequested.id, props, 'inside fetchAlbumCover')
+                props.getTrackList(dataRequested.tracklist)
             }
         } catch (e) {
             return e
@@ -35,7 +38,7 @@ function AlbumCover(props) {
     return (
         
         <section id="albumCover" className="row d-flex flex-column mt-3 py-0 px-4 m-0">
-
+            {console.log(currentAlbum)}
             {currentAlbum !== false ? (
                
             <div className=" col-12 jumbotron jumbotron-fluid bg-transparent p-0">
