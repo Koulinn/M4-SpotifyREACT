@@ -9,6 +9,7 @@ export default function SideBar() {
         <nav id="nav-sideBar" class="d-flex flex-column mod-navBar">
             <MainLogo></MainLogo>
             <MenuSideBar></MenuSideBar>
+            <hr></hr>
             <SidePlayListMenu></SidePlayListMenu>
             <SideFavouriteSongsList></SideFavouriteSongsList> 
         </nav>
