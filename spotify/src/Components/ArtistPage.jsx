@@ -2,7 +2,7 @@ import React from 'react'
 import Sections from './Sections'
 import TopBar from './TopBarComp/TopBar'
 import { withRouter } from 'react-router'
-import './albumPage.css'
+
 
 function ArtistPage() {
     return (
