@@ -10,7 +10,7 @@ function TopBar() {
   useEffect(() => setTopBarBG(), [windowYOffSet])
 
   const setTopBarBG = () => {
-    console.log(window.pageYOffset)
+    // console.log(window.pageYOffset)
       setwindowsYOffSet(window.pageYOffset)
       if(windowYOffSet > 70){
         setTopBg('row d-flex w-100 p-0 m-0 gradientBG')

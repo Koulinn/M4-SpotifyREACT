@@ -7,13 +7,13 @@ function CardComp(props) {
     return (
         <div className={props.responsiveness}>
                <div className="position-relative">
-                    <div className="position-absolute d-flex justify-content-center align-items-center cardPlayBtnBg" value="49675972" onclick="getTrackFromAPI(event)">
+                    <div className="position-absolute d-flex justify-content-center align-items-center cardPlayBtnBg" value="49675972">
                         <div className="cardPlayBtn">
                         </div>
                     </div>
-                    <a href={props.music.id}>
+                    <Link to={"/albumPage/" + props.music.album.id} >
                         <img src={props.music.album.cover_medium} className="card-img-top" alt="..."/>
-                    </a>
+                    </Link>
                </div>
                 <div className="card-body card-bodymod px-0">
                 <Link to={"/albumPage/" + props.music.album.id} >
