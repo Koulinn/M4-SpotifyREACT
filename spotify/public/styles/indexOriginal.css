@@ -487,12 +487,12 @@ p {
 
 .card-square {
     padding: 16px;
-    background-color: transparent;
+    background-color: transparent!important;
     transition: background-color .4s ease;
 }
 
 .card-square:hover {
-    background-color: #282828;
+    background-color: #282828 !important;
     border-radius: 8px;
 }
 

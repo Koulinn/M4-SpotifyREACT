@@ -7,7 +7,9 @@ export default function MainPage() {
     return (
         <main className="container-fluid p-0 m-0">
             <TopBar></TopBar>
-            <Sections sectionTitle="chill"></Sections>
+            <Sections sectionTitle="Chill"></Sections>
+            <Sections sectionTitle="Summer"></Sections>
+            <Sections sectionTitle="Party"></Sections>
         </main>
     )
 }

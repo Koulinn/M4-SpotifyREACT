@@ -6,7 +6,7 @@ import SideFavouriteSongsList from'./SideFavouriteSongsList'
 
 export default function SideBar() {
     return (
-        <nav id="nav-sideBar" class="d-flex flex-column mod-navBar">
+        <nav id="nav-sideBar" className="d-flex flex-column mod-navBar">
             <MainLogo></MainLogo>
             <MenuSideBar></MenuSideBar>
             <hr></hr>
