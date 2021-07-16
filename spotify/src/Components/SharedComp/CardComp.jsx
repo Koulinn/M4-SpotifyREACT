@@ -3,7 +3,7 @@ import { withRouter } from 'react-router'
 import { Link } from 'react-router-dom'
 
 function CardComp(props) {
-    console.log(props)
+    
     return (
         <div className={props.responsiveness}>
                <div className="position-relative">

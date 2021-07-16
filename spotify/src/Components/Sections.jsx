@@ -17,7 +17,6 @@ const getDataFromAPI = async (query, endpoint = 'search?q=') => {
         let response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/${endpoint}` + query)
         let dataRequested = await response.json()
         setMusics(dataRequested.data.slice(0, 7))
-        console.log(musics.length)
     } catch (e) {
         return e
     }
@@ -44,7 +43,6 @@ const getDataFromAPI = async (query, endpoint = 'search?q=') => {
                         : <CardComp key={music.id} music={music} responsiveness="card col flex-nowrap card-square d-none d-lg-flex"></CardComp>
                     )
                 }
-                {console.log(musics)}
             </Row>
 
         </section>

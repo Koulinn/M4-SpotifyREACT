@@ -1,25 +1,30 @@
 import React from 'react'
+import { useEffect } from 'react'
 
 function TopBar() {
+  let topBar
+  useEffect(() => {
+    topBar = document.getElementById('topBar')
+  }, [])
 
-  let topBar = document.getElementById('topBar')
 
-  window.addEventListener('scroll', function () {
-
-    if (window.pageYOffset < 70) {
-      topBar.classList.remove('gradientBG')
+  if(topBar !== null){
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset < 70) {
+        topBar.classList.remove('gradientBG')
+      }
+      if (topBar.classList.contains('gradientBG') && window.pageYOffset > 100) {
+        return
+      }
+      if (window.pageYOffset > 70) {
+        topBar.classList.add('gradientBG')
+      }
     }
-    if (topBar.classList.contains('gradientBG') && window.pageYOffset > 100) {
-      return
-    }
-    if (window.pageYOffset > 70) {
-      topBar.classList.add('gradientBG')
-    }
+    )
   }
-
-  )
-  return (
-    <header id="topBar" className="row d-flex w-100 p-0 m-0">
+    
+    return (
+      <header id="topBar" className="row d-flex w-100 p-0 m-0">
       <div className="col-12 p-4 m-0 d-flex justify-content-between align-items-center">
         <div id="topBarReturn" className="d-flex justify-content-between align-items-center">
           <button type="button">

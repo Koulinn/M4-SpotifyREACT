@@ -1,5 +1,5 @@
 import React from 'react'
-import MainLogo from './MainLogo'
+import MainLogo from '../MainLogo'
 import MenuSideBar from './MenuSideBar'
 import SidePlayListMenu from './SidePlayListMenu'
 import SideFavouriteSongsList from'./SideFavouriteSongsList'

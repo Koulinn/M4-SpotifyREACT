@@ -4,7 +4,7 @@ import { Link, withRouter } from 'react-router-dom'
 
 function MainLogo() {
     return (
-        <Link className="d-flex ml-4 pb-3">
+        <Link to="/" className="d-flex ml-4 pb-3">
             <div id="main-logo" className="d-flex">
                 <svg viewBox="0 0 1134 340" className="spotify-logo--text">
                     <path fill="currentColor"

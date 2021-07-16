@@ -1,6 +1,5 @@
 import React from 'react'
 import Sections from './Sections'
-
 import TopBar from './TopBarComp/TopBar'
 
 export default function MainPage() {

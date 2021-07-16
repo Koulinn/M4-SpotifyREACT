@@ -5,7 +5,7 @@ import MainPage from './MainPage'
 import PlayerBottom from './playerComps/PlayerBottom'
 import AlbumPage from './AlbumPage'
 import ArtistPage from './ArtistPage'
-import SideBar from './SideBar'
+import SideBar from './SideBar/SideBar'
 
 export default function Home() {
     return (
