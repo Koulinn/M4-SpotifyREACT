@@ -10,6 +10,7 @@ export default function MainPage() {
             <Sections sectionTitle="Chill"></Sections>
             <Sections sectionTitle="Summer"></Sections>
             <Sections sectionTitle="Party"></Sections>
+            <Sections sectionTitle="Weekend"></Sections>
         </main>
     )
 }
