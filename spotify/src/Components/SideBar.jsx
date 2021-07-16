@@ -2,6 +2,7 @@ import React from 'react'
 import MainLogo from './MainLogo'
 import MenuSideBar from './MenuSideBar'
 import SidePlayListMenu from './SidePlayListMenu'
+import SideFavouriteSongsList from'./SideFavouriteSongsList'
 
 export default function SideBar() {
     return (
@@ -9,7 +10,7 @@ export default function SideBar() {
             <MainLogo></MainLogo>
             <MenuSideBar></MenuSideBar>
             <SidePlayListMenu></SidePlayListMenu>
-            
+            <SideFavouriteSongsList></SideFavouriteSongsList> 
         </nav>
     )
 }
