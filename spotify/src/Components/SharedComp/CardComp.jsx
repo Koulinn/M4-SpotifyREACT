@@ -1,4 +1,6 @@
 import React from 'react'
+import { withRouter } from 'react-router'
+import { Link } from 'react-router-dom'
 
 function CardComp(props) {
     console.log(props)
@@ -14,9 +16,9 @@ function CardComp(props) {
                     </a>
                </div>
                 <div className="card-body card-bodymod px-0">
-                <a href="albumPage.html?album_Id=49675972">
+                <Link to={"/albumPage/" + props.music.album.id} >
                     <h5 className="card-title text-truncate card-title-mod">{props.music.album.title}</h5>
-                </a>
+                </Link>
                 <a href="artistPage.html?album_Id=49675972">
                      <p className="card-text card-text-mod">{props.music.artist.name}</p>
                 </a>
@@ -25,4 +27,4 @@ function CardComp(props) {
     )
 }
 
-export default CardComp
+export default withRouter(CardComp)

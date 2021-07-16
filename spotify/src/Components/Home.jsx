@@ -14,7 +14,7 @@ export default function Home() {
                 <SideBar></SideBar>
         
                 <Route path="/" exact render={(routerProps)=> <MainPage {...routerProps}></MainPage>}></Route>
-                <Route path="/albumPage" exact render={(routerProps)=> <AlbumPage {...routerProps}></AlbumPage>}></Route>
+                <Route path="/albumPage/:albumID" exact render={(routerProps)=> <AlbumPage {...routerProps}></AlbumPage>}></Route>
                 <Route path="/artistPage" exact render={(routerProps)=> <ArtistPage {...routerProps}></ArtistPage>}></Route>
 
                 <PlayerBottom></PlayerBottom>
