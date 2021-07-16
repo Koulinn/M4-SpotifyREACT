@@ -354,13 +354,13 @@ p {
 
 /* Top bar */
 
-#topBar {
+/* #topBar {
     background-color: rgb(18, 18, 18, 00);
     z-index: 9999;
     position: sticky;
     top: 0px;
     transition: background-color .4s ease;
-}
+} */
 
 .gradientBG {
     background-color: rgb(18, 18, 18, 100)!important;
