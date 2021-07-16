@@ -5,6 +5,7 @@ import TrackMusic from './SharedComp/TrackMusic'
 
 function TrackHeader(props) {
     const [trackList, setTrackList] = useState([])
+    const [currentAlbum, setAlbum] = useState([])
 
 useEffect(()=>getDataFromAPI() ,[])
     const getDataFromAPI = async () => {
@@ -18,6 +19,7 @@ useEffect(()=>getDataFromAPI() ,[])
             })
             if(response.ok){
                 let dataRequested = await response.json()
+                setAlbum(dataRequested)
                 setTrackList(dataRequested.tracks.data)         
             }
         } catch (e) {
@@ -47,7 +49,7 @@ useEffect(()=>getDataFromAPI() ,[])
                         </div>
                     </div>
                     
-                    {trackList.map( track => <TrackMusic track={track}></TrackMusic>)}
+                    {trackList.map( (track, i ) => <TrackMusic key={i} index={i} track={track} album={currentAlbum}></TrackMusic>)}
                
                 </div>
             </section>
