@@ -11,6 +11,7 @@ import './albumPage.css'
 function AlbumPage(props) {
     const [currentTrackList, setCurrenTrackList] = useState('')
 
+    useEffect(()=> props.setpathName(props.location.pathname))
     return (
         <main className="container-fluid p-0 m-0">
             <TopBar></TopBar>

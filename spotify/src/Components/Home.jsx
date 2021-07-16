@@ -6,15 +6,18 @@ import PlayerBottom from './playerComps/PlayerBottom'
 import AlbumPage from './AlbumPage'
 import ArtistPage from './ArtistPage'
 import SideBar from './SideBar/SideBar'
+import {useState, useEffect} from 'react'
 
-export default function Home() {
+function Home(props) {
+    const [pathName, setpathName] = useState(window.location.pathname)
     return (
-        <Container id="allContentWrapper" className="p-0 d-flex" fluid>
+        <Container id="allContentWrapper" className={pathName === '/' ? "p-0 d-flex homeBG" : "p-0 d-flex BGAlbumPage" } fluid>
+                    
             <Router>
                 <SideBar></SideBar>
         
-                <Route path="/" exact render={(routerProps)=> <MainPage {...routerProps}></MainPage>}></Route>
-                <Route path="/albumPage/:albumID" exact render={(routerProps)=> <AlbumPage {...routerProps}></AlbumPage>}></Route>
+                <Route path="/" exact render={(routerProps)=> <MainPage {...routerProps} setpathName={setpathName}></MainPage>}></Route>
+                <Route path="/albumPage/:albumID" exact render={(routerProps)=> <AlbumPage {...routerProps} setpathName={setpathName}></AlbumPage>}></Route>
                 <Route path="/artistPage/:artistID" exact render={(routerProps)=> <ArtistPage {...routerProps}></ArtistPage>}></Route>
 
                 <PlayerBottom></PlayerBottom>
@@ -23,3 +26,5 @@ export default function Home() {
         </Container >
     );
 }
+
+export default Home

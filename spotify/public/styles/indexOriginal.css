@@ -45,10 +45,6 @@ p {
     color: var(--fadedWhite);
 }
 
-#allContentWrapper {
-    background: rgb(18, 18, 18);
-    background: linear-gradient(0deg, rgba(18, 18, 18, 1) 81%, rgba(20, 20, 20, 1) 89%, rgba(33, 33, 33, 1) 93%, rgba(37, 37, 37, 1) 96%, rgba(43, 43, 43, 1) 100%);
-}
 
 #allContentWrapper>main>section:last-child {
     margin-bottom: calc(10vh + 24px)!important;
