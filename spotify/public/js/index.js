@@ -168,18 +168,18 @@ function addColClassesToCards(sectionTitle) {
 
 
 
-// Generate Li content sidebar
-const btnCreatePlaylist = document.querySelector(
-    "#nav-sideBar > div.sub-menu.mt-4 > ul > li:nth-child(1) > button"
-);
-btnCreatePlaylist.addEventListener("click", function () {
-    createHtmlContent(
-        "li",
-        "Text Dynamically gen", [`w-100`, `pl-4`],
-        "#nav-sideBar #scrolling-menu .scroll > ul",
-        "beforeend"
-    );
-});
+// // Generate Li content sidebar
+// const btnCreatePlaylist = document.querySelector(
+//     "#nav-sideBar > div.sub-menu.mt-4 > ul > li:nth-child(1) > button"
+// );
+// btnCreatePlaylist.addEventListener("click", function () {
+//     createHtmlContent(
+//         "li",
+//         "Text Dynamically gen", [`w-100`, `pl-4`],
+//         "#nav-sideBar #scrolling-menu .scroll > ul",
+//         "beforeend"
+//     );
+// });
 
 
 

@@ -7,7 +7,7 @@ function TrackHeader(props) {
     const [trackList, setTrackList] = useState([])
     const [currentAlbum, setAlbum] = useState([])
 
-useEffect(()=>getDataFromAPI() ,[])
+useEffect(()=>getDataFromAPI() ,[props.currentAlbumID])
     const getDataFromAPI = async () => {
         try {
             let response = await fetch(`https://deezerdevs-deezer.p.rapidapi.com/album/` + props.currentAlbumID, {

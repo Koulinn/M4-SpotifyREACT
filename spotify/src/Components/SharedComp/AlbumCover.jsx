@@ -13,11 +13,11 @@ function AlbumCover(props) {
         getDataFromAPI(props.currentAlbumID)
     ,[props.currentAlbumID])
 
-    useEffect(()=>
-       {getDataFromAPI(props.currentAlbumID)
-        // console.log(currentAlbum)
-    }
-    ,[])
+    // useEffect(()=>
+    //    {getDataFromAPI(props.currentAlbumID)
+    //     // console.log(currentAlbum)
+    // }
+    // ,[])
 
 
     const getDataFromAPI = async (query) => {
@@ -27,7 +27,7 @@ function AlbumCover(props) {
             if(response.ok){
                 let dataRequested = await response.json()
                 setCurrentAlbum(dataRequested)
-                // console.log(dataRequested.id, 'inside fetchAlbumCover')
+                console.log(dataRequested, 'inside dataRequested AlbumCover')
                 props.getTrackList(dataRequested.tracklist)
             }
         } catch (e) {
@@ -48,7 +48,7 @@ function AlbumCover(props) {
                                 </div>
                         <div className="d-flex flex-column justify-content-end ml-4">
                            <div className="pb-3">
-                                <span className="seeMore">{currentAlbum.genres.data[0].name} </span>
+                                <span className="seeMore">{currentAlbum.genres.data.length !== 0 ? currentAlbum.genres.data[0].name : ''} </span>
                                 <h1 className="m-0">{currentAlbum.title}</h1>
                            </div>
                             <div className="albumStats">
