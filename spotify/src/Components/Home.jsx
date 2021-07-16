@@ -2,7 +2,6 @@ import React from 'react'
 import {Container} from 'react-bootstrap'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import MainPage from './MainPage'
-import TopBar from './TopBar'
 import PlayerBottom from './playerComps/PlayerBottom'
 import AlbumPage from './AlbumPage'
 import ArtistPage from './ArtistPage'
@@ -10,7 +9,7 @@ import SideBar from './SideBar'
 
 export default function Home() {
     return (
-        <Container id="allContentWrapper" className="p-0" fluid>
+        <Container id="allContentWrapper" className="p-0 d-flex" fluid>
             <Router>
                 <SideBar></SideBar>
         

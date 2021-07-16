@@ -57,15 +57,15 @@ function loadCardSections() {
 
 }
 
-window.onload = () => {
-    loadCards(dataFromSearch,'sun')
-    let albumId = new URLSearchParams(window.location.search).get("album_Id")
-    console
-    let albumEndpoint = 'album/'
-    if(albumId != undefined)
-    loadAlbumDetails(albumId, albumEndpoint)
+// window.onload = () => {
+//     loadCards(dataFromSearch,'sun')
+//     let albumId = new URLSearchParams(window.location.search).get("album_Id")
+//     console
+//     let albumEndpoint = 'album/'
+//     if(albumId != undefined)
+//     loadAlbumDetails(albumId, albumEndpoint)
     
-}
+// }
 
 // Generate Sections
 /** 
