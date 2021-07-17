@@ -13,7 +13,7 @@ function Home(props) {
     const [pathName, setpathName] = useState(window.location.pathname)
     const [currentMusic, setCurrentMusic] = useState(false)
     return (
-        <Container id="allContentWrapper" className={(pathName === '/') || ( pathName === '/search')  ? "p-0 d-flex homeBG" : "p-0 d-flex BGAlbumPage" } fluid>
+        <Container id="allContentWrapper" className={pathName.includes('album') ? "p-0 d-flex BGAlbumPage" : "p-0 d-flex homeBG" } fluid>
                     
             <Router>
                 <SideBar></SideBar>
