@@ -423,6 +423,10 @@ p {
     min-width: 160px;
 }
 
+.menuActive{
+    background-color:#282828;
+}
+
 .btn.focus,
 .btn:focus {
     outline: none;

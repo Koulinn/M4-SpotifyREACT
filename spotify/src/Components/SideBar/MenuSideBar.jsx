@@ -9,7 +9,7 @@ function MenuSideBar(props) {
 
 
 
-            <li className="d-flex align-items-center w-100">
+            <li className={props.location.pathname==="/" ? "d-flex align-items-center w-100 menuActive" : "d-flex align-items-center w-100" }>
                 <Link to="/">
                     <button type="button" className="d-flex align-items-center w-100 p-2">
                         <div className="d-flex align-items-center justify-content-center p-0 mx-3">
@@ -24,7 +24,7 @@ function MenuSideBar(props) {
                 </Link>
             </li>
 
-            <li className="d-flex align-items-center w-100">
+            <li className={props.location.pathname==="/search" ? "d-flex align-items-center w-100 menuActive" : "d-flex align-items-center w-100" }>
                 <Link to="/search">
                     <button type="button" className="d-flex align-items-center w-100 p-2">
                         <div className="d-flex align-items-center justify-content-center p-0 mx-3">
