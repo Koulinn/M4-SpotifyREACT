@@ -1,8 +1,11 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import useScrollPosition from '@react-hook/window-scroll'
+import Search from '../Search'
+import SearchInput from './SearchInput'
+import {withRouter} from 'react-router'
 
-function TopBar() {
+function TopBar(props) {
     const scrollY = useScrollPosition(60)
     const [clicked, isClicked] = useState(false)
 
@@ -20,6 +23,7 @@ function TopBar() {
               </svg>
             </div>
           </button>
+          {props.location.pathname === "/search" && <SearchInput></SearchInput>}
         </div>
 
         <div id="memberMenu" className="d-flex align-items-center">
@@ -34,7 +38,7 @@ function TopBar() {
               aria-haspopup="true" aria-expanded="false">
               Rafa
             </button>
-            {/* jhsdbdkjshfksdds */}
+
             <div className={clicked ? "dropdown-menu dropdown-menu-left m-0 p-0 show" : "dropdown-menu dropdown-menu-left m-0 p-0"} aria-labelledby="dropdownMenu2">
               <button className="dropdown-item d-flex justify-content-between" type="button">
                 Account
@@ -63,4 +67,4 @@ function TopBar() {
   )
 }
 
-export default TopBar
+export default withRouter(TopBar)
