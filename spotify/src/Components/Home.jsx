@@ -7,12 +7,13 @@ import AlbumPage from './AlbumPage'
 import ArtistPage from './ArtistPage'
 import SideBar from './SideBar/SideBar'
 import {useState, useEffect} from 'react'
+import Search from './Search'
 
 function Home(props) {
     const [pathName, setpathName] = useState(window.location.pathname)
     const [currentMusic, setCurrentMusic] = useState(false)
     return (
-        <Container id="allContentWrapper" className={pathName === '/' ? "p-0 d-flex homeBG" : "p-0 d-flex BGAlbumPage" } fluid>
+        <Container id="allContentWrapper" className={(pathName === '/') || ( pathName === '/search')  ? "p-0 d-flex homeBG" : "p-0 d-flex BGAlbumPage" } fluid>
                     
             <Router>
                 <SideBar></SideBar>
@@ -20,6 +21,7 @@ function Home(props) {
                 <Route path="/" exact render={(routerProps)=> <MainPage {...routerProps} setCurrentMusic={setCurrentMusic} setpathName={setpathName}></MainPage>}></Route>
                 <Route path="/albumPage/:albumID" exact render={(routerProps)=> <AlbumPage setCurrentMusic={setCurrentMusic} {...routerProps} setpathName={setpathName}></AlbumPage>}></Route>
                 <Route path="/artistPage/:artistID" exact render={(routerProps)=> <ArtistPage setCurrentMusic={setCurrentMusic} {...routerProps}></ArtistPage>}></Route>
+                <Route path="/search" exact render={(routerProps)=> <Search {...routerProps} setCurrentMusic={setCurrentMusic} setpathName={setpathName}></Search>}></Route>
 
                 <PlayerBottom currentMusic={currentMusic}></PlayerBottom>
             </Router>
