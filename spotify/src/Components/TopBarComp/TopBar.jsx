@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import useScrollPosition from '@react-hook/window-scroll'
-import Search from '../Search'
+import Search from './Search'
 import SearchInput from './SearchInput'
 import {withRouter} from 'react-router'
 
@@ -23,7 +23,7 @@ function TopBar(props) {
               </svg>
             </div>
           </button>
-          {props.location.pathname === "/search" && <SearchInput></SearchInput>}
+          {props.location.pathname === "/search" && <SearchInput setSearchValue={props.setSearchValue}></SearchInput>}
         </div>
 
         <div id="memberMenu" className="d-flex align-items-center">

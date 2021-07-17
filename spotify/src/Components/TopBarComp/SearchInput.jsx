@@ -3,7 +3,6 @@ import { InputGroup, FormControl } from 'react-bootstrap'
 import {useState, useEffect} from 'react'
 
 function SearchInput(props) {
-    const [searchValue, setSearchValue] = useState('')
     return (
         <>
             <InputGroup className="ml-4 border-0">
@@ -15,9 +14,10 @@ function SearchInput(props) {
                     aria-label="Default"
                     aria-describedby="inputGroup-sizing-default"
                     placeholder="Artists, songs or podcasts"
-                    onChange={(e)=> setSearchValue(e.target.value)}
+                  
+                    onChange={(e)=> props.setSearchValue(e.target.value)}
                     />
-                    {console.log(searchValue)}
+                   
 
                
             </InputGroup>
