@@ -1,20 +1,19 @@
 import React from 'react'
 
-function MusicStats() {
+function MusicStats({currentMusic}) {
     return (
             <div className="footer-music-stats d-flex align-items-center">
                 <div className="footer-album-cover">
-                <img className="img-fluid" src="https://i.scdn.co/image/ab67616d00004851b3994c94dfb241923664bb4d" height="56" alt=""/>
+                <img className="img-fluid" src={currentMusic ? currentMusic.album.cover_small :"https://i.scdn.co/image/ab67616d00004851b3994c94dfb241923664bb4d"} height="56" alt=""/>
                 </div>
                 <div className="footer-album-text">
                     <div className="footer-music-name pl-2">
                         <p className="m-0 text-truncate">
-                        Sweet Dreams (Are Made of This) - Remastered
+                        {currentMusic.title? currentMusic.title : 'Sweet Dreams (Are Made of This) - Remastered'}
                         </p>
                         <span className="mod-font-size-small text-truncate">
-                        <a>Eurythmichs,</a>
-                        <a>Annie Lennox,</a>
-                        <a>Dave Stewart</a>
+                        <a>{currentMusic.artist.name ? currentMusic.artist.name :'Eurythmichs'}</a>
+                        
                         </span>
                     </div>
                 </div>

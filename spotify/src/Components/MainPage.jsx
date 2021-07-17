@@ -7,7 +7,6 @@ export default function MainPage(props) {
     useEffect(()=> props.setpathName(props.location.pathname))
     return (
         <main className="container-fluid p-0 m-0">
-            {console.log(props)}
             <TopBar></TopBar>
             <Sections setCurrentMusic={props.setCurrentMusic} sectionTitle="Chill"></Sections>
             <Sections setCurrentMusic={props.setCurrentMusic} sectionTitle="Summer"></Sections>
