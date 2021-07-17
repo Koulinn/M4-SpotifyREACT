@@ -4,6 +4,7 @@ import useScrollPosition from '@react-hook/window-scroll'
 
 function TopBar() {
     const scrollY = useScrollPosition(60)
+    const [clicked, isClicked] = useState(false)
 
 
      
@@ -23,7 +24,7 @@ function TopBar() {
 
         <div id="memberMenu" className="d-flex align-items-center">
           <button className="btn-upgrade mr-3"> Upgrade</button>
-          <div className="dropdown ml-3 d-flex align-items-center">
+          <div className="dropdown ml-3 d-flex align-items-center" onClick={()=>isClicked(!clicked)}>
             <figure id="avatarIMG" className="m-0 mr-2">
               <img aria-hidden="false" height="28" draggable="false" loading="eager"
                 src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=416657282057430&amp;height=300&amp;width=300&amp;ext=1626675419&amp;hash=AeSvuPnz4PtFnG8QN7w"
@@ -33,7 +34,8 @@ function TopBar() {
               aria-haspopup="true" aria-expanded="false">
               Rafa
             </button>
-            <div className="dropdown-menu dropdown-menu-left m-0 p-0" aria-labelledby="dropdownMenu2">
+            {/* jhsdbdkjshfksdds */}
+            <div className={clicked ? "dropdown-menu dropdown-menu-left m-0 p-0 show" : "dropdown-menu dropdown-menu-left m-0 p-0"} aria-labelledby="dropdownMenu2">
               <button className="dropdown-item d-flex justify-content-between" type="button">
                 Account
                 <svg role="img" height="16" width="16" viewBox="0 0 16 16" className="ml-5 mr-2">
