@@ -125,7 +125,7 @@ p {
 #track-bar span,
 .scrolling-menu>div>p,
 #tracklist .table {
-    color: white;
+    color: var(--fadedWhite);
 }
 
 .square.mod-BGC>svg,
@@ -136,7 +136,7 @@ p {
 #pairingDevice>svg,
 #volumeMute-icon svg,
 #topBar .dropdown-menu .dropdown-item>svg {
-    fill: white;
+    fill: var(--fadedWhite);
 }
 
 
@@ -320,7 +320,7 @@ p {
 }
 
 #queue > svg {
-    fill: white;
+    fill: var(--fadedWhite);
 }
 
 #pairingDevice>svg {
