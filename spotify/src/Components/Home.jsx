@@ -21,7 +21,7 @@ function Home(props) {
                 <Route path="/albumPage/:albumID" exact render={(routerProps)=> <AlbumPage setCurrentMusic={setCurrentMusic} {...routerProps} setpathName={setpathName}></AlbumPage>}></Route>
                 <Route path="/artistPage/:artistID" exact render={(routerProps)=> <ArtistPage setCurrentMusic={setCurrentMusic} {...routerProps}></ArtistPage>}></Route>
 
-                <PlayerBottom></PlayerBottom>
+                <PlayerBottom currentMusic={currentMusic}></PlayerBottom>
             </Router>
             
         </Container >

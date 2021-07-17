@@ -12,12 +12,18 @@ function CardComp(props) {
                         <div className="cardPlayBtn">
                         </div>
                     </div>
-                    <Link to={"/albumPage/" + props.music.album.id} >
+                    <Link 
+                        to={"/albumPage/" + props.music.album.id} 
+                        onClick={()=> props.setCurrentMusic(props.music)}
+                    >
                         <img src={props.music.album.cover_medium} className="card-img-top" alt="..."/>
                     </Link>
                </div>
                 <div className="card-body card-bodymod px-0">
-                <Link to={"/albumPage/" + props.music.album.id} >
+                <Link 
+                    to={"/albumPage/" + props.music.album.id}
+                    onClick={()=> props.setCurrentMusic(props.music)}
+                >
                     <h5 className="card-title text-truncate card-title-mod">{props.music.album.title}</h5>
                 </Link>
                 <Link to={"/artistPage/" + props.music.artist.id}>
