@@ -18,3 +18,7 @@ code {
   position: sticky;
   top: 0px;
 }
+
+svg{
+  cursor: pointer;
+}

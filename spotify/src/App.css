@@ -559,6 +559,11 @@ section .section-text-aux {
     color: var(--fadedWhite);
 }
 
+.trackStats {
+    cursor: pointer;
+}
+
+
 .trackStats:hover {
     background-color: #888;
 }
