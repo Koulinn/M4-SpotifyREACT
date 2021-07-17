@@ -2,7 +2,7 @@ import React from 'react'
 
 function SadSearch() {
     return (
-        <div className="d-flex align-items-center ml-2 mt-3">
+        <div className="d-flex align-items-center ml-2 py-3">
            <div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 404 404" fill="none">
                     <path d="M185.167 319.833C259.541 319.833 319.833 259.541 319.833 185.167C319.833 110.792 259.541 50.5 185.167 50.5C110.792 50.5 50.5 110.792 50.5 185.167C50.5 259.541 110.792 319.833 185.167 319.833Z" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" />
@@ -15,7 +15,7 @@ function SadSearch() {
                     <path d="M112 122C112 122 126.789 112 137.5 112C148.211 112 163 122 163 122" stroke="#C4C4C4" strokeWidth="6" />
                 </svg>
            </div>
-           <p className="ml-2 text-light">Sorry :( we didn't find anything</p>
+           <p className="ml-2 mb-0 align-self-center text-light">Sorry :( we didn't find anything</p>
 
         </div>
     )

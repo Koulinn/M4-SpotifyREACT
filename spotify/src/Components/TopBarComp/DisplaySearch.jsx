@@ -8,7 +8,7 @@ import Spinner from '../SharedComp/Spinner'
 
 function DisplaySearch(props) {
     const [musics, setMusics] = useState([])
-    const [isLoading, setIsLoading] = useState(true)
+    const [isLoading, setIsLoading] = useState(false)
     const [noResults, setNoResults] = useState(false)
 
 
@@ -17,7 +17,9 @@ function DisplaySearch(props) {
         , [props.searchValue])
 
     const getDataFromAPI = async () => {
+        
         if((props.searchValue.length > 1) && (props.searchValue.charAt(0) !== ' ')){
+            setIsLoading(true)
             try {
                 let response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=` + props.searchValue)
     
@@ -43,7 +45,7 @@ function DisplaySearch(props) {
         <section className="row d-flex flex-column mt-3 py-0 px-4 m-0" id='searchResults'>
             <div className="col-12 p-0 d-flex justify-content-between align-items-center">
                 <div className="d-flex align-items-center">
-                    <h3 className="m-0 mr-3" style={{color: 'white', transform: "translateY(-2px)"}}>
+                    <h3 className="m-0 mr-3" style={{color: 'white', transform: "translateY(-2px)", height:"48px"}}>
                         Search Results
                     </h3>
                     {isLoading && <Spinner></Spinner>}
