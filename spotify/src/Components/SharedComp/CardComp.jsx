@@ -6,7 +6,8 @@ function CardComp(props) {
     
     return (
         <div className={props.responsiveness}>
-               <div className="position-relative">
+               <div className="position-relative" 
+               onClick={()=> props.setCurrentMusic(props.music)}>
                     <div className="position-absolute d-flex justify-content-center align-items-center cardPlayBtnBg" value="49675972">
                         <div className="cardPlayBtn">
                         </div>

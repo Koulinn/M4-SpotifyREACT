@@ -18,10 +18,10 @@ function AlbumPage(props) {
             <AlbumCover getTrackList={setCurrenTrackList} currentAlbumID={props.match.params.albumID}></AlbumCover>
             <AlbumMiddleSection></AlbumMiddleSection>
             <TrackHeader currentAlbumID={props.match.params.albumID}></TrackHeader>
-            <Sections sectionTitle="Chill"></Sections>
-            <Sections sectionTitle="Summer"></Sections>
-            <Sections sectionTitle="Party"></Sections>
-            <Sections sectionTitle="Weekend"></Sections>
+            <Sections setCurrentMusic={props.setCurrentMusic} sectionTitle="Chill"></Sections>
+            <Sections setCurrentMusic={props.setCurrentMusic} sectionTitle="Summer"></Sections>
+            <Sections setCurrentMusic={props.setCurrentMusic} sectionTitle="Party"></Sections>
+            <Sections setCurrentMusic={props.setCurrentMusic} sectionTitle="Weekend"></Sections>
         </main>
     )
 }
