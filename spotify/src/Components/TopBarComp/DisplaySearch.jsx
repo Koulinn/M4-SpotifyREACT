@@ -35,8 +35,8 @@ function DisplaySearch(props) {
 
                 <span className="seeMore">FILTER</span>
             </div>
-            <Row className="row d-flex px-0 cardDeck">
-                {musics.length != 0 && musics.map((music, i) => <CardComp key={i} setCurrentMusic={props.setCurrentMusic} music={music} responsiveness="d-flex card col flex-nowrap card-square"></CardComp>)}
+            <Row className="row d-flex px-0 justify-content-between cardDeck">
+                {musics.length != 0 && musics.map((music, i) => <CardComp key={i} setCurrentMusic={props.setCurrentMusic} music={music} responsiveness="d-flex card flex-nowrap card-square"></CardComp>)}
             </Row>
         </section>
     )

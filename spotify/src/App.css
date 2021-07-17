@@ -471,6 +471,10 @@ p {
     border-radius: 24px 0 0 24px !important;
 }
 
+#searchResults .card-square{
+    width: 200px;
+
+}
 .form-control:focus{
 border-color: transparent !important;
 box-shadow: none !important;
