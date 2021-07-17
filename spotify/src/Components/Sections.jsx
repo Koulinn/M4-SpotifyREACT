@@ -39,8 +39,8 @@ const getDataFromAPI = async (query, endpoint = 'search?q=') => {
                 {musics && musics.map((music, i)=> 
                         i < 2 ? <CardComp key={music.id} music={music} responsiveness="d-flex card col flex-nowrap card-square" ></CardComp>
                         : i === 3 ? <CardComp key={music.id} music={music} responsiveness="card col flex-nowrap card-square d-none d-md-flex"></CardComp>
-                        : i === 4 ? <CardComp key={music.id} music={music} responsiveness="card col flex-nowrap card-square d-none d-lg-flex"></CardComp>
-                        : <CardComp key={music.id} music={music} responsiveness="card col flex-nowrap card-square d-none d-lg-flex"></CardComp>
+                        : i === 4 || i === 5 ? <CardComp key={music.id} music={music} responsiveness="card col flex-nowrap card-square d-none d-lg-flex"></CardComp>
+                        : <CardComp key={music.id} music={music} responsiveness="card col flex-nowrap card-square d-none d-xl-flex"></CardComp>
                     )
                 }
             </Row>
