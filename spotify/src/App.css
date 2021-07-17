@@ -319,6 +319,10 @@ p {
     width: 96px;
 }
 
+#queue > svg {
+    fill: white;
+}
+
 #pairingDevice>svg {
     height: 16px;
 }
