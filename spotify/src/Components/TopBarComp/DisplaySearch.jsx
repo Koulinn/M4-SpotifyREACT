@@ -2,28 +2,40 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Row } from 'react-bootstrap'
 import CardComp from '../SharedComp/CardComp'
+import SadSearch from '../SharedComp/SadSearch'
 import Spinner from '../SharedComp/Spinner'
+
 
 function DisplaySearch(props) {
     const [musics, setMusics] = useState([])
     const [isLoading, setIsLoading] = useState(true)
+    const [noResults, setNoResults] = useState(false)
+
 
     useEffect(() =>
         getDataFromAPI()
         , [props.searchValue])
 
     const getDataFromAPI = async () => {
-        try {
-            let response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=` + props.searchValue)
-
-            if (response.ok) {
-                setIsLoading(false)
-
-                let dataRequested = await response.json()
-                setMusics(dataRequested.data)
+        if((props.searchValue.length > 1) && (props.searchValue.charAt(0) !== ' ')){
+            try {
+                let response = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=` + props.searchValue)
+    
+                if (response.ok) {
+                    setIsLoading(false)
+    
+                    let dataRequested = await response.json()
+                    if(dataRequested.data.length === 0){
+                        setNoResults(true)
+                        setTimeout(()=>setMusics(dataRequested.data),500)
+                    } else {
+                        setNoResults(false)
+                        setTimeout(()=>setMusics(dataRequested.data),500)
+                    }
+                }
+            } catch (e) {
+                return e
             }
-        } catch (e) {
-            return e
         }
     }
 
@@ -41,7 +53,8 @@ function DisplaySearch(props) {
                 <span className="seeMore">FILTER</span>
             </div>
             <Row className="row d-flex px-0 justify-content-between cardDeck">
-                {musics.length != 0 && musics.map((music, i) => <CardComp key={i} setCurrentMusic={props.setCurrentMusic} music={music} responsiveness="d-flex card flex-nowrap card-square"></CardComp>)}
+                {noResults && <SadSearch></SadSearch>}
+                {musics.length > 0 && musics.map((music, i) => <CardComp key={i} setCurrentMusic={props.setCurrentMusic} music={music} responsiveness="d-flex card flex-nowrap card-square"></CardComp>)}
             </Row>
         </section>
     )
