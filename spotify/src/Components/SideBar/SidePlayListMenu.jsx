@@ -2,7 +2,7 @@ import React from 'react'
 
 function SidePlayListMenu() {
     return (
-        <div className="sub-menu mt-4">
+        <div className="sub-menu">
         <ul className="nav-menu d-flex flex-column mb-0 p-0">
           <li className="d-flex align-items-center w-100">
             <button type="button" className="d-flex align-items-center w-100 p-2">
