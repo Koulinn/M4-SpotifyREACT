@@ -416,7 +416,7 @@ p {
 }
 
 #topBar .dropdown-menu {
-    transform: translate3d(-104px, 38px, 0px) !important;
+    transform: translate3d(-110px, -1px, 0px) !important;
     background-color: #282828;
     box-shadow: 0 16px 24px rgb(0 0 0 / 30%), 0 6px 8px rgb(0 0 0 / 20%);
     max-width: 350px;
