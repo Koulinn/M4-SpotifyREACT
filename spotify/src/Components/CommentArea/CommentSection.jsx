@@ -3,7 +3,7 @@ import CommentSectionHeader from './CommentSectionHeader'
 
 function CommentSection() {
     return (
-        <div className="d-flex flex-column">
+        <div id="Comment-Section" className="d-flex flex-column">
             <CommentSectionHeader></CommentSectionHeader>
         </div>
     )
