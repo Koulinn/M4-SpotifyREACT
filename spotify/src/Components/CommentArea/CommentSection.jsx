@@ -2,6 +2,7 @@ import React from 'react'
 import CommentCard from './CommentCard'
 import CommentSectionHeader from './CommentSectionHeader'
 import CommentShowMoreInlineBtn from './CommentShowMoreInlineBtn'
+import WriteCommentCard from './WriteCommentCard'
 
 function CommentSection() {
     return (
@@ -9,6 +10,7 @@ function CommentSection() {
             <CommentSectionHeader></CommentSectionHeader>
             <CommentCard></CommentCard>
             <CommentShowMoreInlineBtn></CommentShowMoreInlineBtn>
+            <WriteCommentCard></WriteCommentCard>
         </div>
     )
 }

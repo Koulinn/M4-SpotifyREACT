@@ -2,7 +2,12 @@ import React from 'react'
 
 function WriteCommentArea() {
     return (
-        <div>
+        <div className="form-Wrapper">
+            <form>
+                <textarea className="textarea-style" placeholder="Leave a comment">
+
+                </textarea>
+            </form>
             
         </div>
     )
