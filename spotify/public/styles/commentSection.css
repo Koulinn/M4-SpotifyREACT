@@ -1,6 +1,8 @@
 /* Comment Section */
 #Comment-Section {
   max-width: 360px;
+  background-color: #f9f9f9;
+  border-radius: 11px 11px 0px 0px;
 }
 
 /* Comment Section Header */
@@ -50,17 +52,15 @@
 /* Comment Card */
 
 .card-Wrapper {
-  background: #f9f9f9;
-
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 8px;
+  margin: 16px;
 }
 
 /* CommentCardTopMetaStats */
 
-
 .CommentCardTopMetaStats-Wrapper {
-margin: 8px 8px 8px 16px;
+  margin: 8px 8px 8px 16px;
 }
 
 .Avatar-Wrapper {
@@ -68,13 +68,47 @@ margin: 8px 8px 8px 16px;
   height: 40px;
 }
 
-.Avatar-Wrapper >img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+.Avatar-Wrapper > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
-.Username-Wrapper{
-    margin: 0 8px;
+.Username-Wrapper {
+  margin: 0 8px;
+}
+
+.Username-Wrapper > span {
+  font-family: Heebo;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.PublishedDate-Wrapper > span {
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.CommentTextArea-Wrapper {
+    margin: 16px 16px 8px 16px;
+}
+
+.CommentTextArea-Wrapper > p {
+  font-family: "IBM Plex Serif";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
 }

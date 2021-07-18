@@ -9,10 +9,10 @@ function CommentCardTopMetaStats() {
     
                 </div>
                 <div className="Username-Wrapper">
-                    Martha
+                    <span>Martha</span>
                 </div>
                 <div className="PublishedDate-Wrapper">
-                    05/11/2021
+                    <span>05/11/2021</span>
                 </div>
             </div>
 
