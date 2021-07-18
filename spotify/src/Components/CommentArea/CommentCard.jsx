@@ -1,4 +1,5 @@
 import React from 'react'
+import CommentCardBottomStats from './CommentCardBottomStats'
 import CommentCardTopMetaStats from './CommentCardTopMetaStats'
 import CommentTextArea from './CommentTextArea'
 
@@ -7,6 +8,7 @@ function CommentCard() {
         <div className="card-Wrapper">
             <CommentCardTopMetaStats></CommentCardTopMetaStats>
             <CommentTextArea></CommentTextArea>
+            <CommentCardBottomStats></CommentCardBottomStats>
             
         </div>
     )

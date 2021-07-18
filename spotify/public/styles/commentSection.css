@@ -16,11 +16,12 @@
   font-family: Heebo;
   font-size: 13px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: center;
   color: #f9f9f9;
+  letter-spacing: .8px;
 }
 
 #comment-header-icons {
@@ -60,7 +61,7 @@
 /* CommentCardTopMetaStats */
 
 .CommentCardTopMetaStats-Wrapper {
-  margin: 8px 8px 8px 16px;
+  margin: 16px 8px 8px 16px;
 }
 
 .Avatar-Wrapper {
@@ -83,21 +84,23 @@
   font-family: Heebo;
   font-size: 13px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
+  letter-spacing: .8px;
 }
 
 .PublishedDate-Wrapper > span {
   font-family: Heebo;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 13px;
 }
 
+/* Comment Card Text */
 .CommentTextArea-Wrapper {
-    margin: 16px 16px 8px 16px;
+  margin: 16px 16px 8px 16px;
 }
 
 .CommentTextArea-Wrapper > p {
@@ -111,4 +114,39 @@
   align-items: center;
 
   color: #000000;
+}
+
+/* Comment Card Bottom Stats */
+
+.commentCardBottomStats-Wrapper {
+  margin-bottom: 16px;
+}
+.like-Wrapper {
+  margin-left: 16px;
+}
+
+.like-amount-Wrapper {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+.like-Icon-Wrapper svg {
+  fill: #828080;
+}
+
+.like-amount-Wrapper > span {
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.like-answer-inlink-btn-Wrapper > span {
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: .8px;
 }
