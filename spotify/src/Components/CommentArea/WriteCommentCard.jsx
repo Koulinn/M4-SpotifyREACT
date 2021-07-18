@@ -5,7 +5,7 @@ import PublishCommentBtn from './PublishCommentBtn'
 
 function WriteCommentCard() {
     return (
-        <div className="card-Wrapper">
+        <div className="card-Wrapper d-flex flex-column">
         <CommentCardTopMetaStats isTextArea={true}></CommentCardTopMetaStats>
         <WriteCommentArea></WriteCommentArea>
         <PublishCommentBtn></PublishCommentBtn>
