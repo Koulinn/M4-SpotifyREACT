@@ -1,3 +1,51 @@
+/* Comment Section */
 #Comment-Section{
-    max-width: 360px
+    max-width: 360px;
+}
+
+/* Comment Section Header */
+
+.comment-section-header{
+    background: #111216;
+    border-radius: 10px 10px 0px 0px;
+    height: 42px;
+
+
+}
+.comment-header-label{
+font-family: Heebo;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0em;
+text-align: center;
+color: #F9F9F9;
+}
+
+#comment-header-icons{
+    right: 0px;
+}
+
+#comment-header-icons > div{
+    height: 42px;
+    width: 42px;
+}
+
+#comment-header-icons > div > svg{
+    fill: #f9f9f9;
+    display: flex;
+}
+
+.comment-header-icon-hide, .comment-header-icon-show{
+    height: 42px;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.comment-header-icon-show{
+
 }
