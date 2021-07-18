@@ -21,7 +21,7 @@
   letter-spacing: 0em;
   text-align: center;
   color: #f9f9f9;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
 
 #comment-header-icons {
@@ -88,7 +88,7 @@
   line-height: 16px;
   letter-spacing: 0em;
   text-align: left;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
 
 .PublishedDate-Wrapper > span {
@@ -99,11 +99,11 @@
 }
 
 /* Comment Card Text */
-.CommentTextArea-Wrapper {
+.CommentDisplayArea-Wrapper {
   margin: 16px 16px 8px 16px;
 }
 
-.CommentTextArea-Wrapper > p {
+.CommentDisplayArea-Wrapper > p {
   font-family: "IBM Plex Serif";
   font-style: normal;
   font-weight: normal;
@@ -148,5 +148,21 @@
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
+}
+
+/* Comment Show More Inline Btn */
+.CommentShowMoreInlineBtn-Wrapper {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.CommentShowMoreInlineBtn-Wrapper > p {
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  text-align: center;
 }
