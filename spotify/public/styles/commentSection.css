@@ -242,15 +242,17 @@
   top: 64px;
   z-index: 10;
   width: 148px;
+  box-shadow: -4px 2px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .MenuOptions > ul {
   padding: 0px;
-  margin: 16px 16px;
+  margin: 16px 16px 10px 16px;
 }
 
 .MenuOptions > ul > li {
   list-style: none;
+  cursor: pointer;
 }
 
 .MenuOptions > ul > li:nth-child(2) {
@@ -260,38 +262,39 @@
 
 .MenuOptions > ul > li > span {
   font-family: Heebo;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .MenuOptions svg {
   transform: translateY(-1.5px);
 }
 
-.MenuTriangle{
+.MenuTriangle {
   position: absolute;
-  top:52px;
-  right: -4px;
-  width: 0; 
-  height: 0; 
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 12px solid #f9f9f9;
+  top: 45px;
+  right: 17.5px;
+  width: 0;
+  height: 0;
   z-index: 9;
 }
 
-.OpenMenu-Outter-Wrapper{
+.OpenMenu-Outter-Wrapper {
   top: 0px;
   right: 16px;
 }
 
-.OpenMenu-InnerWrapper{
-  filter: drop-shadow(-4px 2px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+.OpenMenu-InnerWrapper {
+  filter: drop-shadow(-4px 2px 4px rgba(0, 0, 0, 0.25)),
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.menuClose-btn{
+.menuClose-btn {
   transform: translateX(-6px);
+}
 
+.MenuOptions hr {
+  margin-bottom: 12px;
 }
