@@ -1,10 +1,13 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
+import CommentCardTopMetaStats from './CommentCardTopMetaStats'
 
 function CommentCard() {
     return (
-        <div>
+        <Container className="card-Wrapper px-0">
+            <CommentCardTopMetaStats></CommentCardTopMetaStats>
             
-        </div>
+        </Container>
     )
 }
 
