@@ -12,7 +12,7 @@ function MusicStats({currentMusic}) {
                         {currentMusic.title? currentMusic.title : 'Sweet Dreams (Are Made of This) - Remastered'}
                         </p>
                         <span className="mod-font-size-small text-truncate">
-                        <a>{currentMusic.artist.name ? currentMusic.artist.name :'Eurythmichs'}</a>
+                        <a>{currentMusic ? currentMusic.artist.name :'Eurythmichs'}</a>
                         
                         </span>
                     </div>
