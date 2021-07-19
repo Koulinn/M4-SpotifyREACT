@@ -10,8 +10,8 @@ function CommentMenuOpen() {
                             <path d="M13 4L19.9282 16.16H6.0718L13 4Z" fill="#F9F9F9" />
                         </g>
                         <defs>
-                            <filter id="filter0_dd" x="0.0703125" y="0" width="21.8564" height="20.16" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <filter id="filter0_dd" x="0.0703125" y="0" width="21.8564" height="20.16" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
                                 <feOffset dx="-2" dy="-1" />
                                 <feGaussianBlur stdDeviation="1" />
