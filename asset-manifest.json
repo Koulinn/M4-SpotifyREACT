@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/M4-SpotifyREACT/static/css/main.50ff1815.chunk.css",
+    "main.js": "/M4-SpotifyREACT/static/js/main.c7101eb8.chunk.js",
+    "main.js.map": "/M4-SpotifyREACT/static/js/main.c7101eb8.chunk.js.map",
+    "runtime-main.js": "/M4-SpotifyREACT/static/js/runtime-main.b226999b.js",
+    "runtime-main.js.map": "/M4-SpotifyREACT/static/js/runtime-main.b226999b.js.map",
+    "static/css/2.081f420c.chunk.css": "/M4-SpotifyREACT/static/css/2.081f420c.chunk.css",
+    "static/js/2.9c0c0eb8.chunk.js": "/M4-SpotifyREACT/static/js/2.9c0c0eb8.chunk.js",
+    "static/js/2.9c0c0eb8.chunk.js.map": "/M4-SpotifyREACT/static/js/2.9c0c0eb8.chunk.js.map",
+    "index.html": "/M4-SpotifyREACT/index.html",
+    "static/css/2.081f420c.chunk.css.map": "/M4-SpotifyREACT/static/css/2.081f420c.chunk.css.map",
+    "static/css/main.50ff1815.chunk.css.map": "/M4-SpotifyREACT/static/css/main.50ff1815.chunk.css.map",
+    "static/js/2.9c0c0eb8.chunk.js.LICENSE.txt": "/M4-SpotifyREACT/static/js/2.9c0c0eb8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b226999b.js",
+    "static/css/2.081f420c.chunk.css",
+    "static/js/2.9c0c0eb8.chunk.js",
+    "static/css/main.50ff1815.chunk.css",
+    "static/js/main.c7101eb8.chunk.js"
+  ]
+}
