@@ -3,16 +3,16 @@ import { useEffect, useState } from 'react'
 import useScrollPosition from '@react-hook/window-scroll'
 import Search from './Search'
 import SearchInput from './SearchInput'
-import {withRouter} from 'react-router'
+import { withRouter } from 'react-router'
 
 function TopBar(props) {
-    const scrollY = useScrollPosition(60)
-    const [clicked, isClicked] = useState(false)
+  const scrollY = useScrollPosition(60)
+  const [clicked, isClicked] = useState(false)
 
 
-     
-    return (
-      <header id="topBar" className={scrollY < 120 ? 'row d-flex w-100 p-0 m-0 fixPosSticky' : 'row d-flex w-100 p-0 m-0 gradientBG fixPosSticky' }>
+
+  return (
+    <header id="topBar" className={scrollY < 120 ? 'row d-flex w-100 p-0 m-0 fixPosSticky' : 'row d-flex w-100 p-0 m-0 gradientBG fixPosSticky'}>
       <div className="col-12 p-4 m-0 d-flex justify-content-between align-items-center">
         <div id="topBarReturn" className="d-flex justify-content-between align-items-center">
           <button type="button">
@@ -28,10 +28,10 @@ function TopBar(props) {
 
         <div id="memberMenu" className="d-flex align-items-center">
           <button className="btn-upgrade mr-3"> Upgrade</button>
-          <div className="dropdown ml-3 d-flex align-items-center" onClick={()=>isClicked(!clicked)}>
+          <div className="dropdown ml-3 d-flex align-items-center" onClick={() => isClicked(!clicked)}>
             <figure id="avatarIMG" className="m-0 mr-2">
               <img aria-hidden="false" height="28" draggable="false" loading="eager"
-                src="https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=416657282057430&amp;height=300&amp;width=300&amp;ext=1626675419&amp;hash=AeSvuPnz4PtFnG8QN7w"
+                src="https://res.cloudinary.com/koulin/image/upload/v1629396592/Portfolio/bir1sjjq21r3uy0lejwv.jpg"
                 alt="Rafael Lima" />
             </figure>
             <button className="btn dropdown-toggle py-1" type="button" id="dropdownMenu2" data-toggle="dropdown"
