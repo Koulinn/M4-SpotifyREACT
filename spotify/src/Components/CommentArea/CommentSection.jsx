@@ -3,6 +3,7 @@ import CommentCard from './CommentCard'
 import CommentSectionHeader from './CommentSectionHeader'
 import CommentShowMoreInlineBtn from './CommentShowMoreInlineBtn'
 import WriteCommentCard from './WriteCommentCard'
+import './commentSection.css'
 
 
 function CommentSection() {

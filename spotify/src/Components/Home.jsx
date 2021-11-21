@@ -6,8 +6,9 @@ import PlayerBottom from './playerComps/PlayerBottom'
 import AlbumPage from './AlbumPage'
 import ArtistPage from './ArtistPage'
 import SideBar from './SideBar/SideBar'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Search from './TopBarComp/Search'
+
 
 function Home(props) {
     const [pathName, setpathName] = useState(window.location.pathname)
